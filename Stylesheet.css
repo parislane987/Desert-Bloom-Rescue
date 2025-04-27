@@ -1,0 +1,343 @@
+@charset "utf-8";
+@font-face {
+	font-family: "Gill Sans Regular";
+	src: url("Fonts/Gill-Sans.ttf") format("truetype");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Gill Sans Bold";
+	src: url("Fonts/GillSans-Bold.ttf") format("truetype");
+	font-weight: bold;
+}
+
+.volunteering p {
+	font-size: 18px;
+	color: black;
+	text-align: center;
+	max-width: 800px;
+	margin: 10px auto;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-item {
+    text-align: center;
+}
+
+.image-item img {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.image-item p {
+    margin-top: 5px;
+    color: #000000;
+	font-size: 18px;
+}
+
+header, .content, footer {
+    margin: 0 auto;
+}
+body {
+    font-family: "Gill Sans Regular", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E6D9CD;
+    color: #605C40;
+	text-align: center;
+	font-size: 18px;
+}
+
+p {
+	line-height:1.7;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-image {
+	max-width: 100px;
+    width: 100px;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 40px;
+    font-weight: normal;
+    font-family: "Gill Sans Bold", sans-serif;
+}
+
+.search-bar {
+    border: 2px solid #605C40;
+    padding: 8px;
+    border-radius: 20px;
+    font-family: "Gill Sans Regular", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 5px 0;
+    background-color: white;
+    align-items: center; 
+}
+
+nav a {
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    color: #605C40;
+}
+
+nav a:hover {
+    color: #EDB9AF;
+}
+
+.contact-title {
+	font-family: "Gill Sans Bold";
+	font-size: 28px;
+	color: #605C40;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: white;
+    color: #605C40;
+    padding: 8px 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: "Gill Sans Regular";
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+}
+
+.dropdown-content a {
+    color: #605C40;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.content img {
+	border-radius: 8px;
+}
+
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    padding-right: 30px;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #605C40;
+    font-family: "Gill Sans Bold", sans-serif;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    color: #605C40;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #605C40;
+    border-radius: 12px;
+}
+
+.contact-form button {
+    width: 40%;
+    padding: 10px;
+    margin-top: 15px;
+	margin-left: 15px;
+    background-color: #EDB9AF;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.contact-form button:hover {
+	background-color: #E18B7B;
+	transition: background-color .3s ease;
+}
+
+.donation-box {
+    width: 250px;
+    padding: 15px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px auto;
+}
+
+.donation-box h3 {
+    color: #605C40;
+    font-family: "Gill Sans Bold", sans-serif;
+}
+
+.donation-box input {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #605C40;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.donation-box button {
+    background-color: #EDB9AF;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 30%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.donation-box button:hover {
+	background-color: #E18B7B;
+	transition: background-color .3s ease;
+}
+
+.social-icons a:hover {
+    color: #EDB9AF;
+	transition: color 0.3s ease;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-top: 1px solid #ccc;
+    font-weight: normal;
+    color: #000000;
+}
+
+.intro-section {
+    text-align: center;
+}
+
+.content h1, .content h2, .intro-section h1 {
+    font-size: 36px;
+    color: #605C40;
+    font-family: "Gill Sans Bold", sans-serif;
+}
+
+
+.intro-section p {
+    font-size: 18px;
+    color: #000000;
+}
+
+.summary {
+	max-width: 800px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.mission-statement {
+	max-width: 800px;
+	margin: 10px auto;
+	text-align: center;
+	padding: 10px;
+}
+
+.meet-our-team {
+	max-width: 800px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.meet-our-team h4 {
+	font-size: 18px;
+	color: #605C40;
+	font-family: "Gill Sans Regular", sans-serif;
+}
+
+.discover-rescues h5 {
+	font-size: 18px;
+	color: #605C40;
+	font-family: "Gill Sans Regular", sans-serif;
+}
+
+.discover-rescues {
+	max-width: 800px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.volunteer-story {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+}
